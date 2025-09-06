@@ -18,13 +18,13 @@ class GamesSeeder extends Seeder
                 'title' => 'The Legend of Zelda: Breath of the Wild',
                 'description' => 'Un open world rivoluzionario ambientato a Hyrule.',
                 'release_date' => '2017-03-03',
-                'cover_image' => 'https://upload.wikimedia.org/wikipedia/en/0/0b/The_Legend_of_Zelda_Breath_of_the_Wild.jpg'
+                'cover_image' => 'https://zelda.nintendo.com/breath-of-the-wild/assets/img/media/wallpaper-1-thumb.jpg'
             ],
             [
                 'title' => 'Elden Ring',
                 'description' => 'Un vasto action RPG sviluppato da FromSoftware.',
                 'release_date' => '2022-02-25',
-                'cover_image' => 'https://upload.wikimedia.org/wikipedia/en/8/8d/Elden_Ring_cover.jpg'
+                'cover_image' => 'https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/eldenringtarnishededition/2x1_NSwitch2_EldenRing.jpg'
             ],
             [
                 'title' => 'Super Mario Odyssey',
@@ -36,7 +36,7 @@ class GamesSeeder extends Seeder
                 'title' => 'Hollow Knight',
                 'description' => 'Un metroidvania indie ambientato nel regno di Hallownest.',
                 'release_date' => '2017-02-24',
-                'cover_image' => 'https://upload.wikimedia.org/wikipedia/en/3/3b/Hollow_Knight_cover.jpg'
+                'cover_image' => 'https://data.xxlgamer.com/products/4252/qATiGpJ2bh09GJ-big.jpg'
             ],
             [
                 'title' => 'The Witcher 3: Wild Hunt',
@@ -54,13 +54,13 @@ class GamesSeeder extends Seeder
                 'title' => 'Dark Souls III',
                 'description' => 'Un action RPG punitivo e appassionante.',
                 'release_date' => '2016-04-12',
-                'cover_image' => 'https://upload.wikimedia.org/wikipedia/en/5/5c/Dark_Souls_III.jpg'
+                'cover_image' => 'https://gaming-cdn.com/images/products/2060/orig/dark-souls-3-deluxe-edition-deluxe-edition-pc-gioco-steam-cover.jpg?v=1703156659'
             ],
             [
                 'title' => 'Bloodborne',
                 'description' => 'Un dark fantasy gotico sviluppato da FromSoftware.',
                 'release_date' => '2015-03-24',
-                'cover_image' => 'https://upload.wikimedia.org/wikipedia/en/9/9f/Bloodborne_box_artwork.jpg'
+                'cover_image' => 'https://image.api.playstation.com/vulcan/img/rnd/202010/2614/Sy5e8DmeKIJVjlAGraPAJYkT.png'
             ],
             [
                 'title' => 'Red Dead Redemption 2',
@@ -72,7 +72,7 @@ class GamesSeeder extends Seeder
                 'title' => 'God of War Ragnarök',
                 'description' => 'Kratos e Atreus affrontano il destino tra dèi norreni.',
                 'release_date' => '2022-11-09',
-                'cover_image' => 'https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_Ragnarok_cover.jpg'
+                'cover_image' => 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/capsule_616x353.jpg?t=1750909504'
             ],
         ];
 
