@@ -15,7 +15,7 @@
 
     <div class="mb-3">
         <label for="description" class="form-label">Descrizione</label>
-        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+        <input  class="form-control" id="description" name="description" rows="3" required></textarea>
     </div>
 
     <div class="mb-3">
@@ -32,7 +32,7 @@
         @foreach($consoles as $console)
 
         <div class="technology me-2">
-          <input type="checkbox" name="consoles[]" value="{{$console->id}}" id="console-{{$console->id}}">
+          <input type="checkbox" name="consoles[]" value="{{$console->id}}" id="console-{{$console->id}} ">
           <label for="{{$console->id}}">{{$console->name}}</label>
         </div>
 

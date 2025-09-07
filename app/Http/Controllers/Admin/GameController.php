@@ -67,24 +67,47 @@ class GameController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Game $game)
     {
-        //
+        $consoles = Console::all();
+
+        return view("games.edit", compact("game", "consoles"));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Game $game)
     {
-        //
+
+        $data = $request->all();
+
+        $game->title = $data["title"];
+        $game->description = $data["description"];
+        $game->release_date = $data["release_date"];
+        $game->cover_image = $data["cover_image"];
+
+        $game->update();
+
+        if ($request->has("consoles")) {
+            $game->consoles()->sync($data["consoles"]);
+        } else {
+            $game->consoles()->detach();
+        };
+
+        return redirect()->route("games.show", compact("game"));
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Game $game)
     {
-        //
+
+        $game->consoles()->detach();
+
+        $game->delete();
+
+        return redirect()->route("games.index");
     }
 }
